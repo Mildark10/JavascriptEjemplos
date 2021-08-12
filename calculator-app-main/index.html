@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <title>Frontend Mentor | Calculator app Avalos Milton</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Frontend Mentor | Calculator app Avalos Milton</title>
 </head>
-<body">
-
+<body ">
 
   <!--contenedor principal-->
-  <div class="contenedor">
-    <div class="titulo">
-      <div class="toogle">
+  <div class="contenedor ">
+    <div class="titulo ">
+      <div class="toogle ">
         <h3>Calc</h3>
-        <div class="right">
-          <p id="uno">1</p>
-          <p id="dos">2</p>
-          <p id="tres">3</p>
+        <div class="right ">
+          <p id="uno ">1</p>
+          <p id="dos ">2</p>
+          <p id="tres ">3</p>
         </div>
       </div>
-      <div class="control">
+      <div class="control ">
         <p>Theme</p>
-        <div class="caja">
-          <div id="caja-circular"></div>
+        <div class="caja ">
+          <div id="caja-circular "></div>
         </div>
       </div>
     </div>
-    <div class="ventana">
-      <form name="calc">
-        <input type="text" name="text" readonly id="ventana">
+    <div class="ventana ">
+      <form name="calc ">
+        <input type="text " name="text " readonly id="ventana ">
       </form>
     </div>
-    <div class="ventana-body">
-      <div class="btn">
-        <button class="num" onclick="document.calc.text.value+='7'" >7</button>
-        <button class="num" onclick="document.calc.text.value+='8'">8</button>
-        <button class="num" onclick="document.calc.text.value+='9'">9</button>
-        <button  class="del" onclick="del()">DEL</button>
-        <button class="num"onclick="document.calc.text.value+='4'" >4</button>
-        <button class="num" onclick="document.calc.text.value+='5'" >5</button>
-        <button class="num"onclick="document.calc.text.value+='6'" >6</button>
-        <button class="sum" onclick="document.calc.text.value+='+'">+</button>
-        <button class="num" onclick="document.calc.text.value+='1'">1</button>
-        <button class="num"onclick="document.calc.text.value+='2'" >2</button>
-        <button class="num" onclick="document.calc.text.value+='3'">3</button>
-        <button class="resta" onclick="document.calc.text.value+='-'" >-</button>
-        <button class="punto"onclick="document.calc.text.value+='.'" >.</button>
-        <button class="num" onclick="document.calc.text.value+='0'">0</button>
-        <button class="division"onclick="document.calc.text.value+='/'" >/</button>
-        <button class="multi"onclick="document.calc.text.value+='*'" >X</button>
-        <button class="reset" onclick="document.calc.text.value=''" >Reset</button>
-        <button class="igual" onclick="document.calc.text.value=eval(calc.text.value)">=</button>
+    <div class="ventana-body ">
+      <div class="btn ">
+        <button class="num " onclick="document.calc.text.value+='7' " >7</button>
+        <button class="num " onclick="document.calc.text.value+='8' ">8</button>
+        <button class="num " onclick="document.calc.text.value+='9' ">9</button>
+        <button  class="del " onclick="del() ">DEL</button>
+        <button class="num "onclick="document.calc.text.value+='4' " >4</button>
+        <button class="num " onclick="document.calc.text.value+='5' " >5</button>
+        <button class="num "onclick="document.calc.text.value+='6' " >6</button>
+        <button class="sum " onclick="document.calc.text.value+='+' ">+</button>
+        <button class="num " onclick="document.calc.text.value+='1' ">1</button>
+        <button class="num "onclick="document.calc.text.value+='2' " >2</button>
+        <button class="num " onclick="document.calc.text.value+='3' ">3</button>
+        <button class="resta " onclick="document.calc.text.value+='-' " >-</button>
+        <button class="punto "onclick="document.calc.text.value+='.' " >.</button>
+        <button class="num " onclick="document.calc.text.value+='0' ">0</button>
+        <button class="division "onclick="document.calc.text.value+='/' " >/</button>
+        <button class="multi "onclick="document.calc.text.value+='*' " >X</button>
+        <button class="reset " onclick="document.calc.text.value='' " >Reset</button>
+        <button class="igual " onclick="document.calc.text.value=eval(calc.text.value) ">=</button>
       </div>
     </div>
   </div>
-  <script src="js/jsCalculadora.js"></script>
+  <script src="js/jsCalculadora.js "></script>
 
 </body>
 </html>
