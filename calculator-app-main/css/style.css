@@ -3,261 +3,305 @@
 /*generales*/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Spartan", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 :root {
-    --blanco: #fff;
-    --negro: #111;
-    --amarillo: hsl(52, 100%, 62%);
-    --naranja: hsl(25, 98%, 40%);
-    --btnIgual: hsl(6, 63%, 50%);
-    --principalColor: hsl(222, 26%, 31%);
-    --segundoBgColor: hsl(0, 0%, 90%);
-    --tercerBgColor: hsl(268, 75%, 9%);
-    --segundoBtn: hsl(0, 5%, 81%);
-    --tercerBtn: hsl(268, 71%, 12%);
-    --tercerBtnShadow: hsl(268, 47%, 21%);
-    --tercerBtnColors: hsl(290, 70%, 36%);
+  --blanco: #fff;
+  --negro: #111;
+  --amarillo: hsl(52, 100%, 62%);
+  --naranja: hsl(25, 98%, 40%);
+  --btnIgual: hsl(6, 63%, 50%);
+  --principalColor: hsl(222, 26%, 31%);
+  --segundoBgColor: hsl(0, 0%, 90%);
+  --tercerBgColor: hsl(268, 75%, 9%);
+  --segundoBtn: hsl(0, 5%, 81%);
+  --tercerBtn: hsl(268, 71%, 12%);
+  --tercerBtnShadow: hsl(268, 47%, 21%);
+  --tercerBtnColors: hsl(290, 70%, 36%);
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
-    background-color: var(--principalColor);
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--principalColor);
+  height: 100vh;
 }
 
 body.active1 {
-    background-color: var(--segundoBgColor);
+  background-color: var(--segundoBgColor);
 }
 
 body.active1 .btn {
-    background-color: var(--segundoBtn);
+  background-color: var(--segundoBtn);
 }
 
 body.active2 {
-    background-color: var(--tercerBgColor);
+  background-color: var(--tercerBgColor);
 }
-
 
 /*fin de generales*/
 
 .toogle {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .right {
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
 }
 
 .toogle p {
-    margin: 0 5px;
-    color: var(--blanco);
-    cursor: pointer;
+  margin: 0 5px;
+  color: var(--blanco);
+  cursor: pointer;
 }
 
 body.active1 .toogle h3 {
-    color: var(--negro);
+  color: var(--negro);
 }
 
 body.active2 .toogle h3 {
-    color: var(--amarillo);
+  color: var(--amarillo);
 }
 
 h3 {
-    color: var(--blanco);
-    text-transform: uppercase;
+  color: var(--blanco);
 }
 
 .control {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .control .caja {
-    width: 60px;
-    height: 15px;
-    margin-left: 4px;
-    background-color: hsl(224, 36%, 15%);
-    border-radius: 30px;
-    position: relative;
+  width: 60px;
+  height: 15px;
+  margin-left: 4px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 30px;
+  position: relative;
 }
 
 body.active1 .control .caja {
-    background-color: var(--segundoBtn);
+  background-color: var(--segundoBtn);
 }
 
 body.active2 .control #caja-circular {
-    background-color: hsl(176, 100%, 44%);
+  background-color: hsl(176, 100%, 44%);
 }
 
 .control #caja-circular {
-    width: 15px;
-    height: 15px;
-    background-color: var(--btnIgual);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    border-radius: 30px;
-    transition: 0.3s all ease-in-out;
+  width: 15px;
+  height: 15px;
+  background-color: var(--btnIgual);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 30px;
+  transition: 0.3s all ease-in-out;
 }
 
 body.active1 .control #caja-circular {
-    background-color: var(--naranja);
+  background-color: var(--naranja);
 }
 
 .control p {
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-right: 4px;
-    color: var(--blanco);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 4px;
+  color: var(--blanco);
+  font-weight: 400;
 }
 
 body.active1 .control p {
-    color: var(--negro);
+  color: var(--negro);
 }
 
 body.active1 .right p {
-    color: var(--negro);
+  color: var(--negro);
 }
 
 body.active2 .control p {
-    color: var(--amarillo);
+  color: var(--amarillo);
 }
 
 body.active2 .right p {
-    color: var(--amarillo);
+  color: var(--amarillo);
 }
 
 .ventana {
-    width: 450px;
+  width: 450px;
 }
 
 #ventana {
-    width: 100%;
-    height: 100px;
-    margin: 10px 0;
-    text-align: right;
-    font-size: 32px;
-    outline: none;
-    background-color: hsl(228, 36%, 15%);
-    color: var(--blanco);
-    border: 0;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  text-align: right;
+  font-size: 32px;
+  outline: none;
+  border-radius: 10px;
+  background-color: hsl(228, 36%, 15%);
+  color: var(--blanco);
+  border: 0;
 }
 
 body.active1 #ventana {
-    background-color: hsl(0, 0%, 93%);
-    color: var(--negro);
+  background-color: hsl(0, 0%, 93%);
+  color: var(--negro);
 }
 
 body.active2 #ventana {
-    background-color: var(--tercerBtn);
-    color: var(--amarillo);
+  background-color: var(--tercerBtn);
+  color: var(--amarillo);
 }
 
 button {
-    width: 90px;
-    padding: 15px;
-    outline: none;
-    border: 0px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 3px 0px 0px hsl(28, 1%, 4%);
-    margin: 10px 10px;
+  width: 90px;
+  padding: 15px;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 3px 0px 0px hsl(28, 1%, 4%);
+  margin: 10px 10px;
 }
 
 button:hover {
-    box-shadow: inset 3px 3px 3px #d0d0d0, inset -1px -1px 1px #746d6d;
+  box-shadow: inset 3px 3px 3px #d0d0d0, inset -1px -1px 1px #746d6d;
 }
 
 body.active1 button {
-    box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
 }
 
 body.active1 button:hover {
-    box-shadow: inset 3px 3px 3px #d0d0d0, inset -1px -1px 1px #e1dfdf;
+  box-shadow: inset 3px 3px 3px #d0d0d0, inset -1px -1px 1px #e1dfdf;
 }
 
 body.active2 button {
-    box-shadow: 0px 3px 0px 0px var(--tercerBtnShadow);
-    background-color: var(--tercerBtnColors);
-    color: var(--amarillo);
+  box-shadow: 0px 3px 0px 0px var(--tercerBtnShadow);
+  background-color: var(--tercerBtnColors);
+  color: var(--amarillo);
 }
 
 body.active2 button:hover {
-    box-shadow: inset 3px 3px 3px #590b77, inset -1px -2px 1px #6d4677;
+  box-shadow: inset 3px 3px 3px #590b77, inset -1px -2px 1px #6d4677;
 }
 
 .btn {
-    display: flex;
-    width: 450px;
-    flex-flow: wrap;
-    background-color: hsl(228, 36%, 15%);
-    padding: 10px 5px;
-    margin: 9px 0;
-    border-radius: 7px;
-    font-size: 32px;
+  display: flex;
+  width: 450px;
+  flex-flow: wrap;
+  background-color: hsl(228, 36%, 15%);
+  padding: 10px 5px;
+  margin: 9px 0;
+  border-radius: 7px;
+  font-size: 32px;
 }
 
 .reset,
 .del {
-    box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
-    background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+  background-color: hsl(225, 21%, 49%);
 }
 
 body.active1 .reset,
 body.active1 .del {
-    box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
-    background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+  background-color: hsl(185, 42%, 37%);
 }
 
 body.active2 .reset,
 body.active2 .del {
-    box-shadow: 0px 3px 0px 0px var(--tercerBtnColors);
-    background-color: var(--tercerBtnShadow);
-    color: var(--blanco);
+  box-shadow: 0px 3px 0px 0px var(--tercerBtnColors);
+  background-color: var(--tercerBtnShadow);
+  color: var(--blanco);
 }
 
 .igual {
-    box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
-    background-color: var(--btnIgual);
+  box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+  background-color: var(--btnIgual);
 }
 
 .reset,
 .igual {
-    width: 200px;
-    color: var(--blanco);
+  width: 200px;
+  color: var(--blanco);
 }
 
 body.active1 .igual {
-    box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
-    background-color: var(--naranja);
+  box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+  background-color: var(--naranja);
 }
 
 body.active2 .igual {
-    box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
-    background-color: hsl(176, 100%, 44%);
-    color: var(--blanco);
+  box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+  background-color: hsl(176, 100%, 44%);
+  color: var(--blanco);
 }
 
 body.active2 .igual:hover {
-    box-shadow: 0px 3px 0px 0px hsl(177, 55%, 74%);
+  box-shadow: 0px 3px 0px 0px hsl(177, 55%, 74%);
 }
 
 .num {
-    font-size: 26px;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 425px) and (min-width: 310px) {
+  .contenedor {
+    width: 90%;
+  }
+
+  .titulo {
+    position: relative;
+    left: 15px;
+    right: 15px;
+    width: 92%;
+  }
+  .ventana {
+    width: 288px;
+    margin: 0 auto;
+
+    /* border-radius: 60px; */
+  }
+  .control .caja {
+    height: 19px;
+  }
+
+  .control #caja-circular {
+    top: 2px;
+  }
+  #ventana {
+    border-radius: 8px;
+  }
+  .btn {
+    width: 287px;
+    margin: 0 auto;
+  }
+  button {
+    width: 49px;
+    padding: 6px;
+  }
+  .reset,
+  .igual {
+    width: 118px;
+  }
+  .num {
+    font-size: 1.5rem;
+  }
 }
